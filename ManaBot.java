@@ -10,7 +10,7 @@ import java.awt.Color;
 public class ManaBot extends AdvancedRobot
 {
 	private static final int WALL_MARGIN = 50, MAX_VELOCITY = 8, MAX_DIMENSION = 5000;
-	private int tooCloseToWall = 0, moveDirection = 1, gunDirection = 1, movementDirection = 1; //when -1, turns other way
+	private int tooCloseToWall = 0, moveDirection = 1, movementDirection = 1; //when -1, turns other way, tooClosetoWall is initialization
 	double previousEnergy = 100; //keep track of enemy energy
 	
 	public void run() {
@@ -37,7 +37,6 @@ public class ManaBot extends AdvancedRobot
 	public void onScannedRobot(ScannedRobotEvent e) {
 	// 5 lines of code (dodging) were provided by https://www.ibm.com/developerworks/library/j-dodge/index.html
 		setTurnRight(e.getBearing() + 90 - 30 * movementDirection);
-		gunDirection = -gunDirection;
 		double energyChange = previousEnergy - e.getEnergy();
 		setTurnGunRight(normalizeBearing(getHeading() - getGunHeading() + e.getBearing()));
 		setTurnRadarRight(normalizeBearing(getHeading() - getRadarHeading() + e.getBearing()));
