@@ -31,7 +31,7 @@ Step 11. After successfully compiling, go to the main RoboCode screen and click 
 Step 12. Underneath packages, click “nmimura_mkn1” then ManaBot in the robots menu
 Step 13. Click Start Battle once you’ve added as many robots as you want
 
-Copy and pasting the source code:
+Copy and pasting the source code: 
 Step 1. Copy all the text from ManaBot.java
             1a. The code can be found here:  
             https://github.com/nmimura/Robocode/blob/master/ManaBot.java
