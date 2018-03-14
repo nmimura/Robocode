@@ -10,6 +10,7 @@ How to test ManaBot:
 You can either download and install ManaBot or you can copy the source code and make a completely new bot.
 
 Downloading ManaBot:
+
 Step 1. Download ManaBot.java
 
            1a. Go to https://github.com/nmimura/Robocode then click the green “Clone or Download”
